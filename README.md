@@ -36,3 +36,7 @@
   
   
 **9、编写程序，使用字典存储学生信息，包括学号和姓名，请根据学生学号从小到大输出学生的信息**
+学号若要求从大到小排，怎么处理
+```python
+order=sorted(stu.items(),key=lambda x:x[0],reverse=False)   #将reverse=False改成reverse=True
+```
