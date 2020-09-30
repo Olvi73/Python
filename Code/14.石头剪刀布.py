@@ -24,31 +24,40 @@ def result(a,b,flag):
     else:
         return result(b,a,-1)
 AI=['石头','剪刀','布']
+player=0
+computer=0
+maxpoint=0
+minpoint=0
 for i in range(7):
-    player=0
-    computer=0
     rs=random.choice(AI)
     var=input("玩家出的是(石头\剪刀\布)：")
     print('电脑出的是(石头\剪刀\布)：'+rs)
     final=result(rs,var,1)
-    if final==0:
-        print("平局！")
-    elif final==1:
+    if final==1:
         print('玩家胜利！')
         player+=1
     elif final==-1:
         print('电脑胜利！')
         computer+=1
+    else :
+        print("平局！")
+    maxpoint=max(player,computer)
+    minpoint=min(player,computer)
+    if(maxpoint>6-i+minpoint):
+        break
     if(player==4):
-        print("")
-        print('玩家获得最终的胜利！')
         break
     if(computer==4):
-        print("")
-        print('电脑获得最终的胜利！')
         break
-if(player<=3 and computer<=3):
+if(player>computer):
     print("")
-    print('最终的结果是平局！')
-    
-        
+    print('玩家获得最终的胜利！')
+elif(player<computer):
+    print("")
+    print('电脑获得最终的胜利！')
+else:
+    print("")
+    print('最终的结果是平局')
+print("游戏局数：",i+1)
+print("玩家获胜数：%d"%player,end="")
+print("电脑获胜数：%d"%computer)
