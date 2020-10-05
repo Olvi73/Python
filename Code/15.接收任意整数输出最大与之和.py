@@ -11,10 +11,10 @@ def f(*a):
     s=0
     for x in range(len(b)):
         s+=b[x]
-    rs[0]=min(b)
+    rs[0]=max(b)
     rs[1]=s
     return  rs
 
 var=input("请开始输入：")
-print("最小值：",f(var)[0],"输入数据之和：",f(var)[1])
+print("最大值：",f(var)[0],"输入数据之和：",f(var)[1])
     
