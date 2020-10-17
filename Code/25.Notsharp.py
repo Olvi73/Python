@@ -14,14 +14,8 @@ n=txt.count('#')
 def find(str,n):
     out=str
     if(re.search('#',str)):
-        if(re.search('#(.*)\n',str)):
-            rs0=re.search('#(.*)\n',str).span()[0]
-            rs1=re.search('#(.*)\n',str).span()[1]
-            temp=str[rs0:rs1]
-            out=str.replace(temp,'')
-        else:
-            rs=re.search('\n#',str).span()[0]
-            out=str[:rs]
+        rs=re.search('#.*(\n|.)',str).group()
+        out=str.replace(rs,'')
     if(n!=0):
         return find(out,n-1)
     return out
