@@ -135,3 +135,23 @@ order=sorted(stu.items(),key=lambda x:x[0],reverse=True)   #将原来的reverse=
 + 显示并输出查询记录  
 + 添加、删除、修改记录并显示结果  
 + 导入CSV格式文件记录
+
+## Q34
+>+ **有一个字符串`Doing is better than saying`，编写程序对该字符串按照空格进行拆分，再对拆分后的结果进行合并连接**
+
+## Q35
+>+ **从一个文件中读取一串字符串并且把其中所有的数字组成一个新的字符串，并且打印出来。**  
+
+`Mystr.txt`
+```
+dfe3fa6fa4aewfawijfa;fjaweawfeawawefargaefaef5awefasdfeargfasdcds2awea4afadszsdvzxefafzsdva7fasdczdvafedszv6zvczvdsf2awefafzsdccsea46fg
+```
+
+## Q36
+>+ **输入一个自然数，输出它的二进制、八进制、十六机制表示形式**
+
+## Q37
+>+ **编写程序，使用正则表达式提取另一个Python程序中的所有函数名。**
+
+## Q38
+>+ **输出不以2或4结尾的电话号码(11位)。**
