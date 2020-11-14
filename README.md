@@ -155,3 +155,16 @@ dfe3fa6fa4aewfawijfa;fjaweawfeawawefargaefaef5awefasdfeargfasdcds2awea4afadszsdv
 
 ## Q38
 >+ **输出不以2或4结尾的电话号码(11位)。**
+
+
+## finall Q1
+>+ **分段函数**
+
+## finall Q2
+>+ **NxN的矩阵，从左上到右下求和，统计到list**
+
+## finall Q3
+>+ **20个随机数的list，偶数倒序排序，奇数不变**
+
+## finall Q4
+>+ **数组a[n] 求出所有递增三元组，a[i] a[j] a[k] 当0< i< j< k < n, i j k 为一组递增三元组**
